@@ -1,0 +1,28 @@
+/* Pastissos.css */
+
+.pastel-list {
+  display: flex;          /* Muestra los elementos en fila */
+  flex-wrap: wrap;        /* Permite que bajen a otra línea si no caben */
+  gap: 20px;              /* Espacio entre pasteles */
+  list-style: none;       /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.pastel-item {
+  flex: 1 1 200px;        /* Cada pastel ocupa al menos 200px y se adapta */
+}
+
+.pastel-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pastel-card img {
+  width: 100%;
+  max-width: 200px;       /* Tamaño máximo de la imagen */
+  border-radius: 5px;
+}

@@ -1,0 +1,86 @@
+/* Contenedor del formulario */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;  /* h1 arriba, formulario debajo */
+  justify-content: center; /* centra vertical */
+  align-items: center;     /* centra horizontal */
+  height: 100vh;           /* ocupa toda la altura de la pantalla */
+  width: 100vw;            /* ocupa todo el ancho de la pantalla */
+  background-color: #f0f2f5; /* opcional */
+  box-sizing: border-box;    /* para evitar scroll por padding */
+}
+
+/* Estilos del formulario */
+form {
+  max-width: 400px;
+  width: 90%;               /* se adapta a pantallas pequeñas */
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Cada campo */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Inputs al enfocar */
+form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Botón */
+form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Botón al pasar el mouse */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Mensajes de error */
+form p {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  align-items: center;     /* centra horizontal */
+  height: 100vh;           /* altura total de la ventana */
+}

@@ -5,6 +5,7 @@ import Home from "./components/Home.jsx";
 import FormulariPastis from "./components/FormulariPastis.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx"; // Navbar propio
+import Hook from "./components/Hook.jsx";
 
 export default function App() {
   const [pagina, setPagina] = useState("home"); // controla qué sección se muestra
@@ -20,6 +21,7 @@ export default function App() {
         {pagina === "pastissos" && <Pastissos />}
         {pagina === "formulari" && <Formulari />}
         {pagina === "formulariPastis" && <FormulariPastis />}
+          {pagina === "hook" && <Hook />}
       </div>
 
       <Footer />
